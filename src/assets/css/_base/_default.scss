@@ -124,32 +124,51 @@
     column-gap: 30px ;
 }
 
+button{
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 200px;
+}
 
+button:disabled{
+background: #D8DADB;
+border:none;
+color: #fff ; 
+}
 
 .BTN1 {
-
+    @include btn(200px, 50px,  #fff, $prime-2, $prime-2);
 }
 .BTN2 {
-
+    @include btn(280px, 50px,  #fff, $prime-1, $prime-1);
 }
 .BTN3 {
-
+    @include btn(200px, 50px, #fff, $prime-1, $prime-1);
 }
 .BTN4 {
+    @include btn(200px, 50px, $prime-2, $prime-2, #fff);
 }
 .BTN5 {
+    @include btn(200px, 50px, $prime-1, $prime-1, #fff);
 }
 .button-hover {
+    opacity: 0.3;
 }
 .buttons-grid2 {
 }
 .button1 {
+    @include btn(150px, 40px,  #fff, $prime-2, $prime-2);
 }
 .button2 {
+    @include btn(150px, 40px,  #fff, $prime-1, $prime-1);
 }
 .button3 {
+    @include btn(150px, 40px, #fff, $prime-1, $prime-1);
 }
 .button4 {
+    @include btn(150px, 40px, $prime-2, $prime-2, #fff);
 }
 .button5 {
+    @include btn(150px, 40px, $prime-1, $prime-1, #fff);
 }
