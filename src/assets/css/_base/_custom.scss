@@ -1,0 +1,93 @@
+h1{
+    font-size: 35px;
+    font-family: $font-bold-main;
+    color: $d3-p4;   
+}
+
+h2 {
+    font-size: 33px;
+    font-family: $font-medium-main;
+    color: $d2-p4;
+}
+  
+h3 {
+    font-size: 27px;
+    font-family: $font-medium-main;
+    color: $d3-p4;
+  }
+
+h4 {
+    font-size: 22px;
+    font-family: $font-medium-main;
+    color: $d3-p4;
+ }
+  
+
+h5 {
+    font-size: 17px;
+    font-family: $font-medium-main;
+    color: $d3-p4;
+  }
+
+h6 {
+    font-size: 15px;
+    font-family: $font-medium-main;
+    color: $d3-p4;
+  }
+
+p {
+    font-size: 14px;
+    font-family: $font-regular-main;
+    color: $d1-p4;
+      }
+
+.subtitle {
+    p{
+    font-size: 20px;
+    font-family: $font-medium-main;
+    color: $d1-p4;
+  }
+}
+
+  h2:hover,
+  .subtitle p:hover {
+      background: $prime-1;
+      color: white;
+      padding: 0 15px;
+  }
+
+  li{
+    font-size: 15px;
+    font-family: $font-medium-main;
+    color: $d1-p4;
+    list-style-type: none;
+    margin:20px 7px 0 0;
+  }
+  li:before{
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url(../image/list_icon.png);
+    margin-right: 7px;
+  }
+  li:nth-child(1){
+      margin-top: 40px;
+  } 
+  li:last-child{
+    margin-bottom: 40px;
+}
+
+.quotation{
+    box-sizing: border-box;
+    background: $l2-p1;
+    border-left: 2px solid $prime-1;
+    padding: 15px 60px  15px 35px;
+        p{
+            color: $d1-p1 ;
+            margin: 0;
+            padding: 0;
+            font-size: 17px;
+            font-family: $font-regular-main;
+        }
+}
