@@ -172,3 +172,49 @@ color: #fff ;
 .button5 {
     @include btn(150px, 40px, $prime-1, $prime-1, #fff);
 }
+
+.form__grid {
+    margin: 50px 0;
+    width: 1500px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 50px;
+    grid-template-areas: 
+    "inputs1 inputs2 inputs3 inputs4"
+    "inputs5 inputs6 inputs7 ."
+    "inputs8 inputs9 . ." ;
+}
+
+
+
+
+.inputs1{
+    grid-area: inputs1;
+}
+.inputs2{
+    grid-area: inputs2;
+}
+.inputs3{
+    grid-area: inputs3;
+}
+.inputs4{
+    grid-area: inputs4;
+ }
+
+
+.inputs5{
+    grid-area: inputs5;
+}
+.inputs6{
+    grid-area: inputs6;
+}
+.inputs7{
+    grid-area: inputs7;
+}
+.inputs8{
+    grid-area: inputs8;
+}
+.inputs9{
+    grid-area: inputs9;
+}

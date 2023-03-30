@@ -51,8 +51,7 @@ p {
 
   h2:hover,
   .subtitle p:hover {
-      background: $prime-1;
-      color: white;
+    @include hover;
       padding: 0 15px;
   }
 
@@ -91,3 +90,67 @@ p {
             font-family: $font-regular-main;
         }
 }
+
+
+input{
+  width: 320px;
+  height: 50px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(216, 218, 219);
+  border-radius: 3px;
+  background-color: rgb(246, 249, 249);
+  padding-left: 20px;
+}
+
+input placeholder{
+  font-size: 13px;
+  font-family: "Myriad Pro";
+  color: rgb(101, 106, 112);
+  line-height: 1.2;    
+}
+
+input:hover{
+  background-color: #fff; 
+}
+input {
+  outline:none;
+}
+
+input:focus{
+  border:1px solid $prime-1; 
+  background-color: #fff; 
+}
+
+.input-button{
+  display: flex;
+ 
+}
+
+.input-plus, .input-minus{
+  margin-top: 20px;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(216, 218, 219);
+  border-radius: 3px;
+  background: #fff;
+  position: relative;
+}
+.div:hover label{
+  @include hover; 
+}
+
+label{
+  margin: 15px;
+}
+
+

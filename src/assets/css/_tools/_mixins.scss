@@ -6,6 +6,10 @@
     background-color: $background-color;
 }
 
-@mixin name {
-    
+@mixin hover {
+    background: $prime-1;
+    color: white;
+    padding: 0 5px;
+
 }
+
