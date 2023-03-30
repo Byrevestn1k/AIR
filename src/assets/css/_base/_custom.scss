@@ -92,7 +92,7 @@ p {
 }
 
 
-input{
+.input{
   width: 320px;
   height: 50px;
   border-radius: 5px;
@@ -102,7 +102,18 @@ input{
   border-radius: 3px;
   background-color: rgb(246, 249, 249);
   padding-left: 20px;
+  box-sizing: border-box;
 }
+
+option{
+  min-height: 30px;
+  padding: 30px 2px 15px;
+}
+
+option:hover{
+background: #e6f7fe;
+}
+
 
 input placeholder{
   font-size: 13px;
@@ -111,19 +122,20 @@ input placeholder{
   line-height: 1.2;    
 }
 
-input:hover{
+input:hover, select:hover{
   background-color: #fff; 
 }
-input {
+input, select, option {
   outline:none;
 }
 
-input:focus{
+.input:focus{
   border:1px solid $prime-1; 
   background-color: #fff; 
 }
 
 .input-button{
+  position: relative;
   display: flex;
  
 }
@@ -144,13 +156,37 @@ input:focus{
   border-radius: 3px;
   background: #fff;
   position: relative;
+  box-sizing: border-box;
+  position: absolute;
+  box-shadow: inset 2px 0px 0px rgb(216, 218, 219);
 }
-.div:hover label{
+
+.input-plus:active, .input-minus:active{
+  box-shadow: inset 0px 3px 1px rgb(216, 218, 219);
+}
+
+.input-minus{
+  transform: rotate(180deg);
+}
+
+.input-plus{
+  right: 50px;
+}
+.div:hover label span{
   @include hover; 
+  
+}
+
+input, label{
+  display: block;
 }
 
 label{
-  margin: 15px;
+  margin-bottom: 20px;
+  span{
+    display: inline;
+  }
 }
+
 
 

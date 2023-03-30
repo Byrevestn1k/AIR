@@ -138,7 +138,7 @@ color: #fff ;
 }
 
 .BTN1 {
-    @include btn(200px, 50px,  #fff, $prime-2, $prime-2);
+    @include btn(220px, 50px,  #fff, $prime-2, $prime-2);
 }
 .BTN2 {
     @include btn(280px, 50px,  #fff, $prime-1, $prime-1);
@@ -152,7 +152,7 @@ color: #fff ;
 .BTN5 {
     @include btn(200px, 50px, $prime-1, $prime-1, #fff);
 }
-.button-hover {
+button:hover:not(button:disabled) {
     opacity: 0.3;
 }
 .buttons-grid2 {
@@ -161,7 +161,7 @@ color: #fff ;
     @include btn(150px, 40px,  #fff, $prime-2, $prime-2);
 }
 .button2 {
-    @include btn(150px, 40px,  #fff, $prime-1, $prime-1);
+    @include btn(170px, 40px,  #fff, $prime-1, $prime-1);
 }
 .button3 {
     @include btn(150px, 40px, #fff, $prime-1, $prime-1);
@@ -200,6 +200,11 @@ color: #fff ;
 }
 .inputs4{
     grid-area: inputs4;
+
+ }
+
+ .inputs4 [placeholder]{
+    text-align: center;
  }
 
 

@@ -103,48 +103,81 @@
       <button class="button2">button2</button>
       <button class="button3">button3</button>
       <button class="button4">button4</button>
-      <button class="button5">BTN5</button>
-      <button class="button-hover button1">BTN1</button>
-      <button class="button-hover button2">BTN2</button>
-      <button class="button-hover button3">BTN3</button>
-      <button class="button-hover button4">BTN4</button>
-      <button class="button-hover button5">BTN5</button>
-      <button disabled class="button1">BTN1</button>
-      <button disabled class="button2">BTN2</button>
-      <button disabled class="button3">BTN3</button>
-      <button disabled class="button4">BTN4</button>
-      <button disabled  class="button5">BTN5</button>
+      <button class="button5">button5</button>
+      <button class="button-hover button1">button1</button>
+      <button class="button-hover button2">button2</button>
+      <button class="button-hover button3">button3</button>
+      <button class="button-hover button4">button4</button>
+      <button class="button-hover button5">button5</button>
+      <button disabled class="button1">button1</button>
+      <button disabled class="button2">button2</button>
+      <button disabled class="button3">button3</button>
+      <button disabled class="button4">button4</button>
+      <button disabled class="button5">button5</button>
     </div>
     <form>
       <div class="form__grid">
-        <div class="div inputs1"><label for="placeholder_text1">Normal </label><br>
-        <input  placeholder="placeholder text" type="text" name="placeholder_text1"></div>
+        <div class="div inputs1"><label for="placeholder_text1"><span>Normal</span> </label>
+        <input class="input" class="input" placeholder="placeholder text" type="text" name="placeholder_text1"></div>
         <div class="div inputs2">
-        <label for="placeholder_text2">Hover </label><br>
-        <input  placeholder="placeholder text" type="text" name="placeholder_text2"></div>
+        <label for="placeholder_text2"><span>Hover</span> </label>
+        <input class="input"  placeholder="placeholder text" type="text" name="placeholder_text2"></div>
         <div class="div inputs3">
-        <label for="placeholder_text3">Active </label>
-        <input  placeholder="placeholder text" id="test"  type="text" name="placeholder_text3"></div>
+        <label for="placeholder_text3"><span>Active</span> </label>
+        <input class="input"  placeholder="placeholder text" id="test"  type="text" name="placeholder_text3"></div>
        
         <div class="div inputs4">
-            <label for="placeholder_text4">Nunber of pages </label>
+            <label for="placeholder_text4"><span>Nunber of pages</span> </label>
             <div class="input-button">
               <span class="input-minus">-</span>
-              <input id="inputs4" type="text" name="placeholder_text4" >
+              <input class="input" placeholder="2" id="inputs4" type="text" name="placeholder_text4" >
               <span class="input-plus">+</span>
           </div>
         </div>
         
-        <div class="div inputs5"><label for="placeholder_text5">Dropdown normal</label><br>
-        <input placeholder="placeholder text"  type="text" name="placeholder_text5"></div>
-        <div class="div inputs6"><label for="placeholder_text6">Dropdown hover </label><br>
-        <input placeholder="placeholder text"  type="text" name="placeholder_text6"></div>
-        <div class="div inputs7"><label for="placeholder_text7">Dropdown active</label><br>
-        <input placeholder="placeholder text"  type="text" name="placeholder_text7"></div>
-        <div class="div inputs8"><label for="placeholder_text8">Normal</label><br>
-        <input placeholder="placeholder text"  type="text" name="placeholder_text8"></div>
-        <div class="div inputs9"><label for="placeholder_text9">Normal</label><br>
-        <input placeholder="placeholder text"  type="text" name="placeholder_text9"></div>
+        <div class="div inputs5"><label for="placeholder_text5"><span>Dropdown normal</span></label>
+        <input class="input" placeholder="placeholder text"  type="text" name="placeholder_text5"></div>
+        <div class="div inputs6"><label for="placeholder_text6"><span>Dropdown hover </span></label>
+        <input class="input" placeholder="placeholder text"  type="text" name="placeholder_text6"></div>
+        <div class="div inputs7"><label for="placeholder_text7"><span>Dropdown active</span></label>
+
+        <!--<select placeholder="placeholder text" class="input">
+              <option>option1</option>
+              <option>option2</option>
+              <option selected>option4</option>
+              <option>option4</option>
+              <option>option5</option>
+              <option>option</option>
+        </select>
+      -->
+
+
+      <form>
+        <input type="reset" class="reset" value="Clear it!" />
+        <div class="__select" data-state="">
+          <div class="__select__title" data-default="Option 0">Option 0</div>
+          <div class="__select__content">
+            <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+            <label for="singleSelect0" class="__select__label">Option 0</label>
+            <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+            <label for="singleSelect1" class="__select__label">Option 1</label>
+            <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" disabled />
+            <label for="singleSelect2" class="__select__label">Option 2 (disabled)</label>
+            <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+            <label for="singleSelect3" class="__select__label">Option 3</label>
+            <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+            <label for="singleSelect4" class="__select__label">Option 4</label>
+          </div>
+        </div>
+      </form>
+
+
+
+        </div>
+        <div class="div inputs8"><label for="placeholder_text8">Normal</label>
+        <input class="input" placeholder="placeholder text"  type="text" name="placeholder_text8"></div>
+        <div class="div inputs9"><label for="placeholder_text9">Normal</label>
+        <input class="input" placeholder="placeholder text"  type="text" name="placeholder_text9"></div>
       </div>
     </form>
   </body>
