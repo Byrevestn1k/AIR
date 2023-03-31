@@ -159,10 +159,16 @@ input, select, option {
   box-sizing: border-box;
   position: absolute;
   box-shadow: inset 2px 0px 0px rgb(216, 218, 219);
+  user-select: none;
 }
 
 .input-plus:active, .input-minus:active{
   box-shadow: inset 0px 3px 1px rgb(216, 218, 219);
+  cursor: pointer;
+}
+
+.input-plus:hover, .input-minus:hover{
+  cursor: pointer;
 }
 
 .input-minus{
@@ -182,11 +188,9 @@ input, label{
 }
 
 label{
-  margin-bottom: 20px;
-  span{
+   span{
     display: inline;
   }
 }
-
 
 
