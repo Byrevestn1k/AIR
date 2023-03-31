@@ -93,8 +93,7 @@
    display: none;
  
    &:checked + label {
-    background-color: $prime-1 !important;
-    opacity: 0.3;
+    background-color: #e5f7fd!important;
    }
    &:disabled + label {
      opacity: 0.6;
@@ -112,11 +111,8 @@
 
  
    &:hover {
-     background-color: $prime-1 !important;
-     opacity: 0.3;
+     background-color: #e5f7fd!important;
    
  
        }
  }
-
- .__select__label:nth-child(1){}
