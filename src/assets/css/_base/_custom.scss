@@ -106,12 +106,12 @@ p {
   box-sizing: border-box;
 }
 
-option{
+.option{
   min-height: 30px;
   padding: 30px 2px 15px;
 }
 
-option:hover{
+.option:hover{
 background: #e6f7fe;
 }
 
@@ -227,6 +227,11 @@ label{
     color: #f75e2e;
     border-bottom: 2px solid #f75e2e;
   }
+  .activ{
+    color: #f75e2e;
+    border-bottom: 2px solid #f75e2e;
+  }
+  
 }
 
 }
@@ -257,7 +262,8 @@ ul{
     color: #fff;
   }
   div:hover{
-    @include activ;
+    background: $prime-1;
+    color: #fff;
   }
 }
 .arrow-left{
@@ -285,4 +291,101 @@ ul{
     background: none;
     border: 2px solid $prime-1;
   }
+}
+
+
+.social-grey,.social-color  {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+
+.div {
+
+}
+.fc {
+  @include social-icon;
+  background: url(../img/fb_grey.png)no-repeat;
+}
+.twitter {
+  @include social-icon;
+  background: url(../img/free-icon-twitter-gray.png) no-repeat;
+}
+.pinterest {
+  @include social-icon;
+  background: url(../img/pinterest_grey.png) no-repeat;
+}
+.google {
+  @include social-icon;
+  background: url(../img/google_plus_grey.png) no-repeat;
+ width: 38px;
+}
+}
+
+.social-color {
+  margin-top: 50px;
+  .fc {
+    @include social-icon;
+    background: url(../img/fb_blue.png)no-repeat;
+  }
+  .twitter {
+    @include social-icon;
+    background: url(../img/free-icon-twitter-blue.png) no-repeat;
+  }
+  .pinterest {
+    @include social-icon;
+    background: url(../img/pinterest_red.png) no-repeat;
+  }
+  .google {
+    @include social-icon;
+    background: url(../img/google_plus_red.png) no-repeat;
+   width: 38px;
+  }
+}
+
+.social-blue {
+  width: 300px;
+ margin-top: 50px;
+  background: $prime-1;
+  padding: 20px;
+  .social{
+    display: flex;
+    justify-content: space-between;
+    margin: 33px 20px;
+
+.fc {
+  @include social-icon;
+  background: url(../img/fb_white.png)no-repeat;
+}
+.twitter {
+  @include social-icon;
+  background: url(../img/free-icon-twitter-white.png) no-repeat;
+}
+.pinterest {
+  @include social-icon;
+  background: url(../img/pinterest_white.png) no-repeat;
+}
+.google {
+  @include social-icon;
+  background: url(../img/google_plus_white.png) no-repeat;
+ width: 38px;
+}
+.div-sirkl{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div-blue{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+ background: $d1-p1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
 }
