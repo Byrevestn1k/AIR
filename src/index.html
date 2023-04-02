@@ -142,31 +142,46 @@
         <label for="placeholder_text5"><span>Dropdown </span></label>
         <select class="input" name="placeholder_text5">
           <option value="">placeholder_text</option>
-          <option value="1">Синий</option>
-          <option value="2">Зеленый</option>
-          <option value="3">Желтый</option>
+          <option value="1">another option</option>
+          <option value="2">another option</option>
+          <option value="3">another option</option>
+          <option value="2">another option</option>
+          <option value="3">another option</option>
         </select>
       </div>
    
       <div class="div inputs6">
         <label for="placeholder_text6"><span>Dropdown hover </span></label>
         <select class="input" name="placeholder_text5">
-          <option value="">placeholder_text</option>
-          <option value="1">Синий</option>
-          <option value="2">Зеленый</option>
-          <option value="3">Желтый</option>
+          <option class="option" value="">placeholder_text</option>
+          <option value="1">another option</option>
+          <option value="2">another option</option>
+          <option value="3">another option</option>
+          <option value="2">another option</option>
+          <option value="3">another option</option>
         </select>
       </div>
-       <div class="div inputs7">
-        <label for="placeholder_text7"><span>Dropdown active</span></label>
-        <select class="input" name="placeholder_text5">
-          <option value="">placeholder_text</option>
-          <option value="1">Синий</option>
-          <option value="2">Зеленый</option>
-          <option value="3">Желтый</option>
-        </select>
-        
-      </div>
+
+      <div class="div inputs7">
+        <label for="placeholder_text6"><span>Dropdown hover </span></label>
+          <form action="post">
+              <div class="__select" data-state="">
+              <div class="__select__title" data-default="Option 0">Option 0</div>
+              <div class="__select__content">
+                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                <label for="singleSelect0" class="__select__label">Option 0</label>
+                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect1" class="__select__label">Option 1</label>
+                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" disabled />
+                <label for="singleSelect2" class="__select__label">Option 2 (disabled)</label>
+                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect3" class="__select__label">Option 3</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Option 4</label>
+              </div>
+            </div>
+          </form>
+        </div>
            <!--<form>
             <div class="__select" data-state="">
             <div class="__select__title" data-default="Option 0">Option 0</div>
@@ -233,13 +248,66 @@
         
         <div class="div inputs8">
             <label for="placeholder_text8">Normal</label>
-            <input class="input" placeholder="placeholder text"  type="text" name="placeholder_text8">
+            <input  class="input normal" placeholder="placeholder text"  type="text" name="placeholder_text8">
+            <div class="normal-input"></div>
         </div>
         <div class="div inputs9">
             <label for="placeholder_text9">Normal</label>
-            <input class="input" placeholder="placeholder text"  type="text" name="placeholder_text9"></div>
-        </div>
+            <input class="input" placeholder="placeholder text"  required type="text" name="placeholder_text9">
+            <div class="error-input"></div>
+          </div>
       </div>
+    </form>
+    <form action="post">
+      <div class="chackbox">
+          <div>
+            <label for="placeholder_check">Normal</label>
+            <div class="chack"></div>
+          </div>
+          <div>
+            <label for="placeholder_check">Normal</label>
+            <div class="chack activ-chack"></div>
+            </div>
+
+            <div>
+              <label for="placeholder_check">Normal</label>
+               <div class="chack selected-chack">
+              </div>
+            </div>
+
+            <div>
+            <label for="placeholder_check">Normal</label>
+            <div disabled class="chack disabled-chack"></div>
+          </div>
+        </div>
+      
+        <div class="chackbox">
+          <div>
+            <label for="placeholder_radio">Normal</label>
+            <div class="radio ">
+              
+            </div>
+          </div>
+          <div>
+            <label for="placeholder_radio">Normal</label>
+            <div class="radio activ-radio">
+                 </div>
+            </div>
+
+            <div>
+              <label for="placeholder_radio">Normal</label>
+               <div class="radio selected-radio">
+                <div class="radio-in"></div>
+              </div>
+            </div>
+
+            <div>
+              <label for="placeholder_radio">Normal</label>
+              <div disabled class="radio disabled-radio">
+                <div class="radio-in"></div>
+              </div>
+            </div>
+        </div>
     </form>
   
   <div class="tabs">
@@ -278,6 +346,10 @@
       <div></div>
       <div></div>
    
+  </div>
+
+  <div class="popup">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
   </div>
 
   <div class="social-grey">

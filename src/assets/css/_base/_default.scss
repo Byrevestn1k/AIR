@@ -219,7 +219,21 @@ button:hover:not(button:disabled) {
 }
 .inputs8{
     grid-area: inputs8;
+    position: relative;
 }
 .inputs9{
     grid-area: inputs9;
+    position: relative;
+}
+
+.chackbox{
+    display: flex;
+
+}
+
+.chackbox>div{
+
+        margin: 30px;
+        text-align: center;
+
 }

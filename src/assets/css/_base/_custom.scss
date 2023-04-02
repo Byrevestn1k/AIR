@@ -1,4 +1,10 @@
-h1{
+
+
+body{
+  width: 1000px;
+  margin: 0 auto;
+}
+  h1{
     font-size: 35px;
     font-family: $font-bold-main;
     color: $d3-p4;   
@@ -106,12 +112,23 @@ p {
   box-sizing: border-box;
 }
 
-.option{
+option{
   min-height: 30px;
   padding: 30px 2px 15px;
+  font-size: 13px;
+  font-family: "Myriad Pro";
+  color: rgb(101, 106, 112);
+  line-height: 1.2;    
 }
 
-.option:hover{
+select{
+  font-size: 13px;
+  font-family: "Myriad Pro";
+  color: rgb(101, 106, 112);
+  line-height: 1.2;    
+}
+
+option:hover{
 background: #e6f7fe;
 }
 
@@ -123,6 +140,16 @@ input placeholder{
   line-height: 1.2;    
 }
 
+input[required]{
+  border:1px solid $prime-2; 
+  color: $prime-2;
+  background-color: #fff;
+}
+input.normal{
+  border:1px solid #09a912; 
+  color:#09a912;
+  background-color: #fff;
+}
 input:hover, select:hover{
   background-color: #fff; 
 }
@@ -139,6 +166,113 @@ input, select, option {
   position: relative;
   display: flex;
  
+}
+
+.normal-input{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 70px;
+  top: 60%;
+  background: url(../img/normal-input.png) no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.chack{
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  border:1px solid #d7d9db;
+}
+
+.chack:hover:not(.disabled-chack){
+border:  1px solid $prime-1;
+}
+
+.activ-chack{
+  border:  1px solid $prime-1;
+}
+
+.selected-chack{
+  background:$prime-1 url(../img/ok-chack.png) no-repeat;
+  background-position: center;
+  background-size: 50% 50%;
+  border:  1px solid $prime-1;
+}
+
+.disabled-chack{
+  background:#d7d9db url(../img/ok-chack.png) no-repeat;
+  background-position: center;
+  background-size: 50% 50%;
+}
+
+.error-input{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 70px;
+  top: 60%;
+  background: url(../img/error_input.png) no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.radio{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border:2px solid #d7d9db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .radio-in{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $prime-1;
+  }
+}
+
+.radio-in{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: $prime-1;
+}
+
+.radio:hover:not(.disabled-radio){
+border:  1px solid $prime-1;
+}
+
+.activ-radio{
+  border:  1px solid $prime-1;
+}
+
+.selected-radio{
+
+  background-position: center;
+  background-size: 50% 50%;
+  border:  1px solid $prime-1;
+}
+
+.disabled-radio{
+  .radio-in{
+    background: #d7d9db;
+  }
+  background-position: center;
+  background-size: 50% 50%;
+}
+
+.error-input{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 70px;
+  top: 60%;
+  background: url(../img/error_input.png) no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .input-plus, .input-minus{
@@ -368,6 +502,7 @@ ul{
   @include social-icon;
   background: url(../img/google_plus_white.png) no-repeat;
  width: 38px;
+ background-size: 105% 105%;
 }
 .div-sirkl{
   height: 50px;
@@ -388,4 +523,20 @@ ul{
   align-items: center;
 }
 }
+}
+
+.popup{
+  font-size: 13px;
+  line-height: 20px;
+  color: #51555a;
+  font-weight: 300;
+  font-family: "Poppins";
+  width: 300px;
+  padding: 25px;
+  border: 1px solid #d7d9db;
+  p{
+    padding: 0;
+    margin: 0;
+  }
+  margin-bottom: 50px;
 }
