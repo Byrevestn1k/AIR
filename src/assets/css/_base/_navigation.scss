@@ -1,5 +1,5 @@
 .navigation-fon-blue {
-   height: 100px;
+   min-height: 100px;
    background: $prime-1;
 }
 .container {
@@ -19,17 +19,20 @@
 
 		&__grid {
 			display: grid;
+			width: 100%;
 			grid-template-rows: 100px;
-			grid-template-columns: 40.2% 9.9% 9.9% 9.9% 5.15% 9.9% 9.9% 5.15%;
+			grid-template-columns:40.2% 9.9% 9.9% 9.9% 5.15% 9.9% 9.9% 5.15%;
 			grid-template-areas:
 			"logotip servises about hit telefon signin order burger" ;
 		}
 
 		&__logotip {
 			grid-area: logotip;
+		
 			display: flex;
 			align-items: center;
 			height: 100px;
+		
 		}
 
 		&__logo-image {
@@ -134,10 +137,11 @@
 			display: flex;
 			align-items: center;
 			margin-left: 10px;
+			grid-area: telefon;
 		}
 
 		&__imagt-telefon{
-			grid-area: telefon;
+
 			width: 31px;
 			height: 31px;
 			background: url(../img/phone_icon.png);
@@ -150,12 +154,12 @@
 			width: 100px;
 		}
 
-		.button3 {
+		.button-grid-signin {
 			grid-area: signin;
 
 		}
 
-		.button1 {
+		.button-grid-order {
 			grid-area: order;
 		}
 
@@ -270,7 +274,134 @@
 }
 
 
+@media (max-width:1170px) {
+	.container{
+		width: 100%;
+	}
+	.navigation{
+		&__grid{
+			display: grid;
+			width: 100%;
+			grid-template-rows: 70px 70px;
+			grid-template-columns:2fr 0.7fr 0.7fr 0.7fr 70px;
+			grid-template-areas:
+			"logotip telefon signin order burger"
+			"logotip servises about hit burger" ;
+
+		}
+		&__logotip {
+
+			height: 100%;
+		}
+
+		&__servises {
+		justify-content: center;
+			
+		}
+
+		&__about-us {
+			justify-content: center;
+		}
+			&__hiw {
+				justify-content: center;
+		}
+		&__telefon{
+			justify-content: center;
+			
+		}
+		
+		&__buttons{
+			justify-content: center;
+			
+		}
+		&__burger{
+			justify-content: center;
+
+		}
+	}
+}
+
+@media (max-width:750px) {
+	.navigation{
+		&__grid{
+			grid-template-columns:repeat(5, 1fr);
+			grid-template-areas:
+			"logotip logotip logotip order signin"
+			"telefon servises about hit  burger";
+		}
+		&__burger{
+			
+
+		}
+		&__servises {
+			justify-content: center;
+				
+			}
+	
+			&__about-us {
+				justify-content: center;
+			}
+				&__hiw {
+					justify-content: center;
+			}
+			&__telefon{
+				justify-content: center;
+				
+			}
+	}
+}
+
+@media (max-width:520px) {
+	.navigation{
+		&__grid{
+			grid-template-columns:repeat(2, 1fr);
+			grid-template-rows: repeat(3, 70px);
+			grid-template-areas:
+			"logotip logotip"
+			"order signin"
+			"telefon burger"
+			;
+		}
+		&__logotip{
+			justify-content: center;
+		}
+
+		&__servises {
+			display: none;
+				
+			}
+	
+			&__about-us {
+				display: none;
+			}
+				&__hiw {
+					display: none;
+			}
+
+	}
+}
 
 
-
+@media (max-width:300px) {
+	.navigation{
+		&__grid{
+			grid-template-columns: 1fr;
+			grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
+			grid-template-areas:
+			"logotip" 
+			"logotip"
+			"order"
+			"signin"
+			"telefon"
+			"burger"
+			;
+		}
+		&__logo-image{
+			display: none;
+		}
+		.menu__btn{
+			left: 5px;
+		}
+	}
+}
 
