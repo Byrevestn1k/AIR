@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
 
 .grid {
     margin: 0 auto;
@@ -153,7 +159,7 @@ color: #fff ;
     @include btn(200px, 50px, $prime-1, $prime-1, #fff);
 }
 button:hover:not(button:disabled) {
-    opacity: 0.3;
+    opacity: 0.6;
 }
 .buttons-grid2 {
 }
@@ -164,7 +170,7 @@ button:hover:not(button:disabled) {
     @include btn(170px, 40px,  #fff, $prime-1, $prime-1);
 }
 .button3 {
-    @include btn(150px, 40px, #fff, $prime-1, $prime-1);
+    @include btn(150px, 40px, #fff, $d1-p1, $d1-p1);
 }
 .button4 {
     @include btn(150px, 40px, $prime-2, $prime-2, #fff);

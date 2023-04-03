@@ -1,0 +1,276 @@
+.navigation-fon-blue {
+   height: 100px;
+   background: $prime-1;
+}
+.container {
+   width: 1170px;
+   box-sizing: border-box;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.navigation {
+	a{
+		text-decoration: none;
+		color: #ffffff;	
+	}
+	a:visited{
+		color: #ffffff;	
+	}
+
+		&__grid {
+			display: grid;
+			grid-template-rows: 100px;
+			grid-template-columns: 40.2% 9.9% 9.9% 9.9% 5.15% 9.9% 9.9% 5.15%;
+			grid-template-areas:
+			"logotip servises about hit telefon signin order burger" ;
+		}
+
+		&__logotip {
+			grid-area: logotip;
+			display: flex;
+			align-items: center;
+			height: 100px;
+		}
+
+		&__logo-image {
+			width: 65px;
+			height: 65px;
+			background: url(../img/icon-logo.png) no-repeat;
+			background-size: contain;
+
+
+		}
+		&__title-site{
+			margin-left: 5px;
+			}
+		&__title{ 
+			margin-top: 20px;
+			p{
+			font-size: 39px;
+			color: #ffffff;
+			font-family: "Gabriola";
+			line-height: 15px;
+	
+		}
+
+		&_yellow {
+			color: $prime-3;
+			font-family: $font-semibold-main;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+
+		&_litle {
+			font-size: 10px;
+			font-family: $font-regular-main;
+		}
+	}
+
+		&__subtitle {
+			p{
+				font-size: 13px;
+				letter-spacing: 0px;
+				line-height: 30px;
+				color: #ffffff;
+				font-weight: 400;
+				font-family: $font-regular-two;
+				line-height: 16px;
+			}
+		}
+
+		&__servises {
+			grid-area: servises;
+			font-size: 12px;
+			text-transform: uppercase;
+			color: #ffffff;
+			font-family: $font-semibold-main;
+			display: flex;
+			align-items: center;
+			
+		}
+
+		&__about-us {
+			grid-area: about;
+			font-size: 12px;
+			text-transform: uppercase;
+			color: #ffffff;
+			font-family: $font-semibold-main;
+			display: flex;
+			align-items: center;
+		}
+
+		&__about-us:after{
+			content: '';
+			width: 0;
+			height: 0;
+			margin-left: 12px;
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			border-top: 4px solid #ffffff;
+		}
+
+		&__servises:after{
+			content: '';
+			width: 0;
+			height: 0;
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			border-top: 4px solid #ffffff;
+			margin-left: 12px;
+		}
+
+
+		&__hiw {
+			grid-area: hit;
+			font-size: 12px;
+			text-transform: uppercase;
+			color: #ffffff;
+			font-family: $font-semibold-main;
+			display: flex;
+			align-items: center;
+		}
+
+		&__telefon{
+			display: flex;
+			align-items: center;
+			margin-left: 10px;
+		}
+
+		&__imagt-telefon{
+			grid-area: telefon;
+			width: 31px;
+			height: 31px;
+			background: url(../img/phone_icon.png);
+		}
+		&__buttons{
+			display: flex;
+			align-items: center;
+		}
+		&__button {
+			width: 100px;
+		}
+
+		.button3 {
+			grid-area: signin;
+
+		}
+
+		.button1 {
+			grid-area: order;
+		}
+
+		&__burger {
+			grid-area: burger;
+			display: flex;
+			align-items: center;
+
+			.hamburger-menu{
+				//position: relative;
+			}
+			.menu {
+				position: relative;
+			 }
+			 .menu__btn {
+			
+				display: flex; 
+				align-items: center;
+				position: relative;
+				grid-area: navi;
+				width: 25px;
+				height: 25px;
+				cursor: pointer;
+				z-index: 1;
+				top: 1px;
+				left: 10px;
+			 }
+			 .menu__box {
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				visibility: hidden;
+				top: 0;
+				left: -100%;
+				width: 300px;
+				margin: 0;
+				padding: 80px 0;
+				list-style: none;
+				text-align: center;
+				background-color: $prime-1;
+				box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+			 }
+			 .menu__item {
+				display: block;
+				flex-direction: column;
+				padding: 12px 24px;
+				color: #fff;
+				font-family: "Roboto", sans-serif;
+				font-size: 20px;
+				font-weight: 600;
+				text-decoration: none;
+			 }
+			 
+			 .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 4px;
+				background-color: #fff;
+			 }
+			 
+			 .menu__btn > span::before {
+				content: "";
+				top: -10px;
+			 }
+			 
+			 .menu__btn > span::after {
+				content: "";
+				top: 10px;
+			 }
+			 
+			 #menu__toggle:checked ~ .menu__btn > span {
+				transform: rotate(45deg);
+			 }
+			 
+			 #menu__toggle:checked ~ .menu__btn > span::before {
+				top: 0;
+				transform: rotate(0);
+			 }
+			 
+			 #menu__toggle:checked ~ .menu__btn > span::after {
+				top: 0;
+				transform: rotate(90deg);
+			 }
+			 
+			 #menu__toggle:checked ~ .menu__box {
+				visibility: visible;
+				left: 0;
+			 }
+
+			 #menu__toggle{
+				visibility: hidden;
+			 }
+			 
+			 .menu__btn > span,
+			 .menu__btn > span::before,
+			 .menu__btn > span::after {
+				transition-duration: 0.25s;
+			 }
+			 
+			 .menu__box {
+				transition-duration: 0.25s;
+			 }
+			 
+			 .menu__item {
+				transition-duration: 0.25s;
+			 }
+			 
+			 /*burger menu*/
+		}
+
+}
+
+
+
+
+
+

@@ -32,7 +32,7 @@ Example:
 }
 @font-face {
     font-family: 'font-semibold-main';
-    src: url('../fonts/OpenSans-Semibold.ttf') format('truetype');
+    src: url('../fonts/Poppins-Semibold.ttf') format('truetype');
     font-style: normal;
     font-weight: 600;
 }
@@ -43,9 +43,17 @@ Example:
     font-weight: 700;
 }
 
+@font-face {
+    font-family: 'font-regular-two';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
 //fonts
 $font-light-main: "font-light-main";
 $font-regular-main: "font-regular-main";
 $font-medium-main: "font-medium-main";
 $font-semibold-main: "font-semibold-main";
 $font-bold-main: "font-bold-main";
+$font-regular-two:"font-regular-two";
