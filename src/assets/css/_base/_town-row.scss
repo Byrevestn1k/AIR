@@ -1,7 +1,10 @@
+.prostodiv{
+   //position: relative;
+ //  height: 100%;
+}
 .town {
    padding-top: 100px;
-   height: 630px;
-   width: 100%;
+  width: 100%;
    background: url(../img/img_town.png);
    position: relative;
    &__grid {
@@ -52,6 +55,7 @@
    }
 
    &__button {
+      margin-top: 30px;
    }
 
    &__girlimage-col {
@@ -73,6 +77,7 @@
       width: 1200px;
       position: relative;
       bottom: 35px;
+      left:-30px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -111,6 +116,16 @@
         width: 100%;
         flex-wrap: wrap;
         height: auto;
+        padding: 15px;
+        left: -15px;
+        
+      }
+&__form-input {
+        
+         align-items: end; 
+         margin: 0px 15px 0; 
+         padding-bottom: 10px; 
+        
       }
        
 
@@ -122,10 +137,11 @@
 
 @media (max-width:875px){
    .town{
-      background-position:  0 370px;
+      padding-top: 20px;
+      background-position:  0 -175px;
       &__form {
          bottom: -20px;
-       }
+        }
       &__girlimage-col {
         display: none;
       }
@@ -137,7 +153,7 @@
 }
 @media (max-width:750px){
    .town{
-      background-position:  0 412px;
+
       &__form {
          bottom: -20px;
        }
@@ -147,14 +163,20 @@
        
    &__title-col {
       width: 100%;
+      .tabs {
+         ul{
+            border-bottom: 1px solid  #afbcc2;
+            width: 95%;
+         }
    }
    }
+}
 }
 
 
 @media (max-width:520px){
    .town{
-      padding-top: 20px;
+      background-image: none;
      
            
    &__title {
@@ -173,6 +195,9 @@
       h1{
          font-size: 26px;
       }
+   }
+   &__button {
+      text-align: center;
    }
    }
 }
