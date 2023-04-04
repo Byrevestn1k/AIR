@@ -150,7 +150,7 @@ color: #fff ;
     @include btn(280px, 50px,  #fff, $prime-1, $prime-1);
 }
 .BTN3 {
-    @include btn(200px, 50px, #fff, $prime-1, $prime-1);
+    @include btn(200px, 50px, #fff, $d1-p1, $d1-p1);
 }
 .BTN4 {
     @include btn(200px, 50px, $prime-2, $prime-2, #fff);

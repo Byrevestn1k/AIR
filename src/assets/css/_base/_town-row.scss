@@ -1,0 +1,223 @@
+.town {
+   padding-top: 100px;
+   height: 630px;
+   width: 100%;
+   background: url(../img/img_town.png);
+   position: relative;
+   &__grid {
+      /*display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: repeat(1, 1fr);*/
+      display: flex;
+   }
+
+   &__title-col {
+      width: 65%;
+   
+   }
+
+   &__title {
+      h1{
+         font-size: 45px;
+      }
+      .blue {
+         color:$prime-1;
+      }
+     h1{
+      line-height: 50px;
+      }
+      .tabs {
+         ul{
+            border-bottom: 1px solid  #afbcc2;
+            width: 71.66%;
+            li{
+               width: 12.45%;
+            }
+         }
+      }
+   }
+
+   &__text {
+      max-width: 530px;
+      font-size: 20px;
+      line-height: 30px;
+      color: #656a70;
+      font-weight: 400;
+      font-family: $font-regular-main;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+   }
+
+   &__buttons-row {
+   }
+
+   &__button {
+   }
+
+   &__girlimage-col {
+      width: 35%;
+      height: 460px;
+      background: url(../img/img-girl.png) no-repeat;
+      transform: scale(-1, 1);
+      //background-size: 90% 100%;
+      background-position: left center;
+      z-index: 2;
+   }
+
+   &__image {
+   }
+
+   &__form {
+      margin: 0 auto;
+      height: 135px;
+      width: 1200px;
+      position: relative;
+      bottom: 35px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background: $prime-1;
+      z-index: 1;
+      label{
+         color: #fff;
+         }
+      .input{
+         width: 200px;
+      }
+   }
+
+   &__form-input {
+      display: flex;
+      align-items: end; 
+      padding-bottom: 35px;
+      margin: 30px 15px 0;  
+      .input-plus{
+         right: 0px;
+         line-height: 45px;
+       }
+      .input-minus{
+         left: 0px;
+         line-height: 45px;
+       }
+       .inputs4 [placeholder]{
+         padding: 0;
+         
+      }
+   }
+}
+@media (max-width:1200px){
+   .town{
+      &__form {
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+      }
+       
+
+   }
+}
+
+
+
+
+@media (max-width:875px){
+   .town{
+      background-position:  0 370px;
+      &__form {
+         bottom: -20px;
+       }
+      &__girlimage-col {
+        display: none;
+      }
+       
+   &__title-col {
+      width: 100%;
+   }
+   }
+}
+@media (max-width:750px){
+   .town{
+      background-position:  0 412px;
+      &__form {
+         bottom: -20px;
+       }
+      &__girlimage-col {
+        display: none;
+      }
+       
+   &__title-col {
+      width: 100%;
+   }
+   }
+}
+
+
+@media (max-width:520px){
+   .town{
+      padding-top: 20px;
+     
+           
+   &__title {
+      h1{
+         font-size: 26px;
+      }
+   }
+   }
+}
+@media (max-width:520px){
+   .town{
+      padding-top: 20px;
+    
+           
+   &__title {
+      h1{
+         font-size: 26px;
+      }
+   }
+   }
+}
+
+@media (max-width:300px){
+   .town{
+      padding-top: 10px;
+           
+   &__title {
+      h1{
+         font-size: 20px;
+      }
+   }
+   }
+}
+
+
+
+
+
+.container {
+}
+.blue {
+}
+.tabs {
+}
+.activ {
+}
+.btn1 {
+}
+.div {
+}
+.inputs6 {
+}
+.input {
+}
+.option {
+}
+.inputs4 {
+}
+.input-button {
+}
+.input-minus {
+}
+.input-plus {
+}
+.BTN3 {
+}
