@@ -1,0 +1,67 @@
+.advantages {
+background: $prime-1 url(../img/icons_transparent.png);
+padding-bottom: 90px;
+   &__link {
+      a{
+         text-decoration: none;
+         columns: $prime-1;
+      
+   }
+   margin-bottom: 15px;
+}
+
+   &__title {
+      grid-area: title  ;
+      h2{
+         font-weight: 400;
+         line-height: 45px;
+         margin:40px 0;
+   }
+}
+   &__row {
+      display:flex;
+      justify-content: space-around;
+      width: 100%;
+      .img1 {
+         background: url(../img/advantages_icon1.png)no-repeat;
+      }
+      .img2 {
+         background: url(../img/advantages_icon2.png)no-repeat;
+      }
+      .img3 {
+         background: url(../img/advantages_icon3.png)no-repeat;
+      }
+
+   }
+
+   &__col1 {
+   }
+
+   &__card {
+      padding: 40px 50px 50px;
+      background: #fff;
+      width: 360px;
+      box-sizing: border-box;
+   }
+
+   &__img {
+      width: 100%;
+      background-position: 0 50%;
+      height: 90px;
+      }
+
+   &__title {
+   }
+
+   &__text {
+   }
+}
+
+.card {
+}
+.img1 {
+}
+.img2 {
+}
+.img3 {
+}
