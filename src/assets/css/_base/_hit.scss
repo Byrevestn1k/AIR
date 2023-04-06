@@ -1,0 +1,102 @@
+.hit {
+     padding:50px 0 90px;
+      &__link {
+         a{
+            text-decoration: none;
+            font-size: 15px;
+            color: $prime-1;
+            font-family: $font-medium-main;
+     
+   
+         }
+      margin: 0px 0 25px;
+      text-align: center;
+      }
+      &__title {
+         grid-area: title ;
+         h2{
+            font-weight: 400;
+            line-height: 45px;
+            margin:40px 0;
+            font-size: 33px;
+            text-align: center;
+      }
+      }
+      &__row {
+         display:flex;
+         justify-content: space-around;
+         flex-wrap: wrap;
+         width: 100%;
+         .img1 {
+            background: url(../img/hit_pancile.png)50% no-repeat;
+         }
+         }
+         .img2 {
+            background: url(../img/hit_label.png)50% no-repeat;
+      }
+         
+         .img3 {
+            background: url(../img/hit_glass.png)50% no-repeat;
+      }
+      .img4 {
+         background: url(../img/hit_rocket.png)50% no-repeat;
+   }
+      &__col1 {
+      }
+      &__card {
+         width: 250px;
+      }
+      &__img {
+         width: 100%;
+         background-position: 0 50%;
+         height: 90px;
+         }
+      &__button{
+         text-align: center;
+         margin-top: 45px;
+         .BTN2{
+            font-size: 14px;
+           font-family: $font-regular-main;
+            font-weight: 500;
+         }
+      }
+      .card {
+         padding: 20px 25px 30px;
+         background: #fff;
+         box-sizing: border-box;
+         text-align: center;
+         margin: 15px;
+      }
+      }
+   
+   .card {
+      padding: 40px 50px 50px;
+      background: #fff;
+      box-sizing: border-box;
+      text-align: center;
+      margin: 15px;
+   }
+   
+   @media (max-width:520px) {
+      .hit {
+            &__card {
+               width: auto;
+               margin: 15px;
+            }
+   }
+   }
+   
+   @media (max-width:320px) {
+      .hit {
+         &__button{
+   
+         .BTN2{
+            width: 100%;
+         }
+      }
+   
+   }
+   .card{
+      padding: 10px;
+   }
+   }

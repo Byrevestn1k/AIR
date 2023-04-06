@@ -273,6 +273,7 @@
 
 @media (max-width:750px) {
 	.navigation{
+		padding-top: 20px;
 		&__grid{
 			grid-template-columns:repeat(5, 1fr);
 			grid-template-areas:

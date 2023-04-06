@@ -49,6 +49,18 @@ Example:
     font-style: normal;
     font-weight: 400;
 }
+@font-face {
+    font-family: 'font-regular-two-italic';
+    src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'font-regular-two-italic-bold';
+    src: url('../fonts/OpenSans-Bolditalic.ttf') format('truetype');
+    font-style:italic;
+    font-weight: 400;
+}
 
 //fonts
 $font-light-main: "font-light-main";
@@ -57,3 +69,5 @@ $font-medium-main: "font-medium-main";
 $font-semibold-main: "font-semibold-main";
 $font-bold-main: "font-bold-main";
 $font-regular-two:"font-regular-two";
+$font-regular-two-italic:"font-regular-two-italic";
+$font-regular-two-italic-bold:"font-regular-two-italic-bold";

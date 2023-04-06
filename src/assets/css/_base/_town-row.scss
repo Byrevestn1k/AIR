@@ -56,6 +56,7 @@
 
    &__button {
       margin-top: 30px;
+  
    }
 
    &__girlimage-col {
@@ -83,6 +84,7 @@
       justify-content: space-around;
       background: $prime-1;
       z-index: 1;
+      padding-bottom: 30px;
       label{
          color: #fff;
          }
@@ -95,7 +97,7 @@
       display: flex;
       align-items: end; 
       padding-bottom: 35px;
-      margin: 30px 15px 0;  
+      margin: 30px 15px 15px;  
       .input-plus{
          right: 0px;
          line-height: 45px;
@@ -106,9 +108,12 @@
        }
        .inputs4 [placeholder]{
          padding: 0;
-         
+ 
       }
    }
+   .BTN3{
+      margin-top: 20px;
+    } 
 }
 @media (max-width:1200px){
    .town{
