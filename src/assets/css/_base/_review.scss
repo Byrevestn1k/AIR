@@ -1,0 +1,89 @@
+
+
+   .review {
+   
+      padding:50px 0 90px;
+      &__link {
+         a{
+            text-decoration: none;
+            font-size: 15px;
+            color: $prime-1;
+            font-family: $font-medium-main;
+     
+   
+         }
+      margin: 0px 0 25px;
+      text-align: center;
+      }
+      &__title {
+         grid-area: title ;
+         h2{
+            font-weight: 400;
+            line-height: 45px;
+            margin:40px 0;
+            font-size: 33px;
+            text-align: center;
+      }
+   }
+   
+         &__row {
+         }
+   
+         &__col1 {
+         }
+   
+         &__col2 {
+         }
+   
+         &__review {
+         }
+   
+         &__foto {
+            background: url(../img/avatar.png) center no-repeat;
+            height: 60px;
+         }
+   
+         &__text {
+            width: 615px;
+            margin: 0 auto;
+            p{
+              text-align: center;
+               margin: 25px 0 30px;
+               font-size: 14px;
+               line-height: 22px;
+               font-family: $font-light-main;
+            }
+         }
+   
+         &__name {
+            width: 615px;
+            margin: 0 auto;
+            p{
+               text-align: center;
+               margin: 0px 0 10px;
+               font-size: 17px;
+               font-family: $font-semibold-main;
+               color: $d1-p1;
+            }
+         }
+   
+         &__col3 {
+         }
+         &__date {
+            width: 615px;
+            margin: 0 auto;
+            p{
+               text-align: center;
+               font-size: 13px;
+               font-family: $font-light-main;
+            }
+         }
+   }
+ 
+   @media (max-width:654px) {
+      .review {
+         &__text, &__date, &__name {
+            width: auto;
+            }
+      }
+   }
