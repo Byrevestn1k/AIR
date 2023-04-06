@@ -1,5 +1,5 @@
 .welcome {
-
+   padding-bottom: 90px;
    &__row {
       margin-top: 40px;
       display: grid;
@@ -9,35 +9,24 @@
       "image title"
       "image text"
       ;
-
-
-
    }
-
    &__col1-image {
       width: 525px;
       height: 420px;
       background: url(../img/welcome_image.png) no-repeat;
       grid-area: image;
-
    }
-
    &__col2-text {
-
       margin-left: 20px;
       grid-area: text  ;
-      
    }
-
    &__link {
       a{
          text-decoration: none;
          columns: $prime-1;
-      
    }
    margin-bottom: 15px;
 }
-
    &__title {
       grid-area: title  ;
       h2{
@@ -46,7 +35,6 @@
          margin:40px 0;
    }
 }
-
    &__text {
       grid-area: text  ;
       p{
@@ -81,6 +69,7 @@
 
 @media (max-width:600px) {
    .welcome {
+      padding-bottom: 20px;
       &__row { 
       grid-template-areas: 
       "title title"

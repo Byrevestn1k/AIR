@@ -5,6 +5,7 @@
 
 
 
+
 .grid {
     margin: 0 auto;
     width: 600px;
@@ -147,7 +148,7 @@ color: #fff ;
     @include btn(220px, 50px,  #fff, $prime-2, $prime-2);
 }
 .BTN2 {
-    @include btn(280px, 50px,  #fff, $prime-1, $prime-1);
+    @include btn(280px, 50px,  #fff, $d1-p1, $d1-p1);
 }
 .BTN3 {
     @include btn(200px, 50px, #fff, $d1-p1, $d1-p1);
