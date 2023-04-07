@@ -81,7 +81,7 @@
 			position: relative;
 		}
 
-		&__servises-box{
+		&__servises-box, &__about-box{
 			position: absolute;
 			width: 180px;
 			bottom: -80px;
@@ -92,15 +92,19 @@
 				padding: 10px;
 				list-style-type: none;
 				li{
-					border-bottom: 1px solid white;
-					margin: 10px;	
+				
+					margin: 10px;
 					a{
 						cursor: pointer;
 					}
 				}
+				li:hover{
+					box-sizing: border-box;
+					border-bottom: 1px solid white;
+				}
 			}
 		}
-		&__servises:hover &__servises-box{
+		&__servises:hover  &__servises-box{
 			display: block;
 			z-index: 1;
 		}
@@ -113,7 +117,14 @@
 			font-family: $font-semibold-main;
 			display: flex;
 			align-items: center;
+			position:relative
 		}
+
+		&__about-us:hover &__about-box{
+			display: block;
+			z-index: 1;
+		}
+
 		&__about-us:after{
 			content: '';
 			width: 0;
@@ -212,10 +223,15 @@
 				font-weight: 600;
 				text-decoration: none;
 			 }
+			 .menu__item:hover{
+				box-sizing: border-box;
+				border-bottom: 1px solid white;
+				
+			 }
 			 .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
 				display: block;
 				position: absolute;
-				width: 100%;
+				width: 30px;
 				height: 2px;
 				background-color: #fff;
 			 }
@@ -346,17 +362,21 @@
 				width: 100%;
 			 }
 			 #menu__toggle:checked ~ .menu__btn > span{
-				top: -290px;
+				top: 20px;
 				transform: rotate(45deg);
-				right: -40px;
+				right: 10px;
+				position: fixed;
+				background: $d1-p2;
 			 }
 			#menu__toggle:checked ~ .menu__btn > span::before {
 			top: 0;
 			transform: rotate(0);
+			background: $d1-p2;
 		 }
 		 #menu__toggle:checked ~ .menu__btn > span::after {
 			top: 0;
 			transform: rotate(90deg);
+			background: $d1-p2;
 		 }
 		 #menu__toggle:checked ~ .menu__box {
 			visibility: visible;
@@ -366,7 +386,7 @@
 
 @media (max-width:300px) {
 	.navigation{
-		&__servises-box{
+		&__servises-box, &__about-box{
 			position: none;
 			width: 100%;
 			text-align: center;
@@ -392,12 +412,22 @@
 			left: 5px;
 		}
 		#menu__toggle:checked ~ .menu__btn > span{
-			transform: rotate(45deg);
-			top: -500px;
-			left: 0;
+		transform: rotate(45deg);
+
 		 }
 		 .menu__box{
+			
 			width: 100%;
+		 }
+		 &__logotip{
+			span {
+				font-size: 12px;
+			}
+		 }
+		 &__title{
+			p{
+				font-size: 24px;
+			}
 		 }
 	}
 }

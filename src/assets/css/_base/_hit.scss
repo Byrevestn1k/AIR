@@ -79,15 +79,17 @@
    
    @media (max-width:520px) {
       .hit {
+         padding: 20px 0 0;
             &__card {
                width: auto;
-               margin: 15px;
+               margin: 10px;
             }
    }
    }
    
    @media (max-width:320px) {
       .hit {
+         padding-bottom: 0;
          &__button{
    
          .BTN2{

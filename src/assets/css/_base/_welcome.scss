@@ -21,10 +21,12 @@
       grid-area: text  ;
    }
    &__link {
+      text-align: center;
       a{
          text-decoration: none;
-         columns: $prime-1;
-   }
+         color: $prime-1;
+         font-size: 15px;
+         }
    margin-bottom: 15px;
 }
    &__title {

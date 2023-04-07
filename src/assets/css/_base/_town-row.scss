@@ -136,10 +136,6 @@
 
    }
 }
-
-
-
-
 @media (max-width:875px){
    .town{
       padding-top: 20px;
@@ -177,8 +173,6 @@
    }
 }
 }
-
-
 @media (max-width:520px){
    .town{
       background-image: none;
@@ -209,45 +203,23 @@
 
 @media (max-width:300px){
    .town{
-      padding-top: 10px;
-           
+            padding-top: 10px;
+            &__form {
+               .input{
+                  width: 100%;
+               }
+            }        
    &__title {
       h1{
          font-size: 20px;
       }
    }
+   &__form-input,.BTN1,.BTN3{
+      width: 100%;
+    } 
+    &__form-input div{
+      width: 100%;
+    } 
    }
 }
 
-
-
-
-
-.container {
-}
-.blue {
-}
-.tabs {
-}
-.activ {
-}
-.btn1 {
-}
-.div {
-}
-.inputs6 {
-}
-.input {
-}
-.option {
-}
-.inputs4 {
-}
-.input-button {
-}
-.input-minus {
-}
-.input-plus {
-}
-.BTN3 {
-}

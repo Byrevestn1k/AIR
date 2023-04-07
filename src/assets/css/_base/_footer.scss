@@ -92,7 +92,7 @@
          grid-area: burger;
       }
       &__section2 {
-         padding-top: 40px;
+         padding: 40px 0;
          display: flex;
          justify-content: start;
          border-bottom: 1px solid $l1-p1;
@@ -137,20 +137,11 @@
          align-items: center;
 		}
 
-		&__section3-social {
-		}
+      &__section3-text{
+         min-width: 172px;
+      }
 
-		&__section3-telephon {
-		}
-      .img1 {
-      }
-      .img2 {
-      }
-      .img3 {
-      }
-      .img4 {
-      }
-      .img-tel {
+	   .img-tel {
          background: url(../img/footer-telefon-icon.png) no-repeat;
       }
       .img-email {
@@ -306,6 +297,7 @@
 }
 @media (max-width:220px) {
    .footer{
+
       &__grid {
          grid-template-columns: repeat(1, 1fr);
          grid-auto-rows: 40px;

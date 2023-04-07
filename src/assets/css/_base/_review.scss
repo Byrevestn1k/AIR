@@ -2,7 +2,7 @@
 
    .review {
    
-      padding:50px 0 90px;
+      padding:80px 0 90px;
       &__link {
          a{
             text-decoration: none;
@@ -79,11 +79,37 @@
             }
          }
    }
- 
+   @media (max-width:1024px) {
+      .review {
+         margin-top: 20px;
+      }
+   }
    @media (max-width:654px) {
       .review {
          &__text, &__date, &__name {
             width: auto;
             }
+      }
+   }
+
+   @media (max-width:1009px) {
+      .review {
+         margin-top: 420px;
+      }
+   }
+
+   @media (max-width:520px) {
+      .review {
+         margin-top: 180px;
+      }
+   }
+   @media (max-width:403px) {
+      .review {
+         margin-top: 280px;
+      }
+   }
+   @media (max-width:244px) {
+      .review {
+         margin-top: 400px;
       }
    }
