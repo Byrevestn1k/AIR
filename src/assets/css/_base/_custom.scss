@@ -480,11 +480,12 @@ ul{
  margin-top: 50px;
   background: $prime-1;
   padding: 20px;
+}
   .social{
     display: flex;
     justify-content: space-between;
     margin: 33px 20px;
-
+  
 .fc {
   @include social-icon;
   background: url(../img/fb_white.png)no-repeat;
@@ -522,7 +523,7 @@ ul{
   align-items: center;
 }
 }
-}
+
 
 .popup{
   font-size: 13px;

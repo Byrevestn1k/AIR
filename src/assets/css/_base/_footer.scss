@@ -95,6 +95,7 @@
          padding-top: 40px;
          display: flex;
          justify-content: start;
+         border-bottom: 1px solid $l1-p1;
      
          p, h5{
             color: #ffffff;
@@ -115,12 +116,74 @@
          width: 200px;
          margin-right: 100px;
       }
-      &__column-title {
+      &__section3 {
+         display: flex;
+         p{
+            color: #fff;
+            font-size: 13px;
+            line-height: 16px;
+            font-family: $font-regular-main;
+            font-weight: 500;
+            span{
+               font-family: $font-bold-main;
+            }
+         }
+		}
+
+		&__section3-columns {
+         width: 263px;
+         margin-right: 30px;
+         display: flex;
+         align-items: center;
+		}
+
+		&__section3-social {
+		}
+
+		&__section3-telephon {
+		}
+      .img1 {
       }
-      &__column-text {
+      .img2 {
       }
+      .img3 {
+      }
+      .img4 {
+      }
+      .img-tel {
+         background: url(../img/footer-telefon-icon.png) no-repeat;
+      }
+      .img-email {
+         background: url(../img/footer-email-icon.png) no-repeat;
+      }
+      .div-sirkl{
+         height: 35px;
+         width: 35px;
+         border-radius: 50%;
+         border: 1px solid #fff;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 0 10px;
+         background-size: contain;
+         background-position: center;
+       }
+       .fc, .twitter,.pinterest,.google {
+         width: 20px;
+         height: 20px;
+         background-size: contain;
+         background-position: center;
+       }
+
+       
    }
    
+
+
+
+
+
+
 
 @media (max-width:1170px) {
 	.footer{
@@ -142,14 +205,26 @@
       &__section2 &__columns:last-child{
             margin-right: 0px;
       }
+      &__section3-columns{
+         margin-top: 20px;
+      }
       &__columns{
          margin-right: 50px;
+   }
+   &__section3{
+      flex-wrap: wrap;
+      padding-bottom: 30px;
+      justify-content: center;
+   }
+   .social{
+      margin: 0;
    }
 	}
 }
 @media (max-width:750px) {
 	.footer{
 		padding-top: 20px;
+      
 		&__grid{
          margin-right: 20px;
          grid-auto-rows: 40px;
@@ -165,8 +240,13 @@
          flex-wrap: wrap;
          justify-content: center;
       }
+
       &__columns {
            margin: 20px;
+      }
+      &__section3{
+         flex-wrap: wrap;
+
       }
 	}
 }
@@ -210,6 +290,18 @@
          justify-content: start; 
          padding-left: 20px;   
          }
+         &__section3{
+            padding-top: 20px;
+         }
+         .social, &__section3-columns{
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+         }
+         .div-sirkl{
+            margin: 15px;
+         }
 	}
 }
 @media (max-width:220px) {
@@ -232,5 +324,6 @@
          padding-left: 0; 
                }
 	}
+
 }
 
