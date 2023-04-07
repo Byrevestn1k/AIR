@@ -2,12 +2,14 @@
    background: $prime-1;
 	
 		&__grid {
+         
 			display: grid;
 			width: 100%;
 			grid-template-rows: 100px;
 			grid-template-columns:40.2% repeat(6, auto) auto;
 			grid-template-areas:
 			"logotip servises about hit telefon signin order burger" ;
+         border-bottom: 1px solid $l1-p1;
          a{
          font-size: 12px;
 			text-transform: uppercase;
@@ -80,7 +82,6 @@
 		&__telefon{
 			grid-area: telefon;
 		}
-
 		.button-grid-signin {
 			grid-area: signin;
 		}
@@ -90,22 +91,47 @@
       &__burger{
          grid-area: burger;
       }
-		}
-
+      &__section2 {
+         padding-top: 40px;
+         display: flex;
+         justify-content: start;
+     
+         p, h5{
+            color: #ffffff;
+         }
+         p{
+            font-size: 13px;
+            font-family: $font-light-main;
+            line-height: 28px;
+         }
+         h5{
+            font-size: 16px;
+            font-family: $font-regular-main;
+            font-weight: 500;
+            margin-bottom: 30px;
+         }
+      }
+      &__columns {
+         width: 200px;
+         margin-right: 100px;
+      }
+      &__column-title {
+      }
+      &__column-text {
+      }
+   }
+   
 
 @media (max-width:1170px) {
-
 	.footer{
-
 		&__grid{
 			display: grid;
 			width: 100%;
-			grid-template-rows: 70px 70px;
+			grid-template-rows: 70px 40px;
 			grid-template-columns:2fr 0.7fr 0.7fr 0.7fr 0.7fr;
 			grid-template-areas:
 			"logotip  signin order burger hit"
 			"logotip servises about  telefon hit" ;
-
 		}
 		&__logotip {
 			height: 100%;
@@ -113,9 +139,14 @@
       &__servises,&__about-us,&__hiw,&__telefon,&__buttons, .button-grid-signin, .button-grid-order {
          margin:0 0;
 		}
+      &__section2 &__columns:last-child{
+            margin-right: 0px;
+      }
+      &__columns{
+         margin-right: 50px;
+   }
 	}
 }
-
 @media (max-width:750px) {
 	.footer{
 		padding-top: 20px;
@@ -124,12 +155,18 @@
          grid-auto-rows: 40px;
 			grid-template-columns:repeat(5, 1fr);
 			grid-template-areas:
-        
 			"logotip logotip logotip order signin"
 			"telefon servises about hit  burger";
 		}
       &__servises,&__about-us,&__hiw,&__telefon,&__buttons, .button-grid-signin, .button-grid-order, &__burger{
 		justify-content: center;     
+      }
+      &__section2{
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+      &__columns {
+           margin: 20px;
       }
 	}
 }
@@ -138,79 +175,62 @@
 		&__grid{
          padding-bottom: 20px;
 			grid-template-columns:repeat(2, 1fr);
-			grid-auto-rows: 40px;
 			grid-template-areas:
 			"logotip logotip"
 			"order signin"
 			"servises about"
          "telefon burger"
-			"hit hit"
-			;
+			"hit hit";
 		}
 		&__logotip{
 			justify-content: center;
 		}
-		
-			}
-			.menu__box {
-				top: -100%;
-				left: 0;
-				width: 100%;
-			 }
-			 #menu__toggle:checked ~ .menu__btn > span{
-				top: -290px;
-				transform: rotate(45deg);
-				right: -40px;
-			 }
-			#menu__toggle:checked ~ .menu__btn > span::before {
-			top: 0;
-			transform: rotate(0);
-		 }
-		 #menu__toggle:checked ~ .menu__btn > span::after {
-			top: 0;
-			transform: rotate(90deg);
-		 }
-		 #menu__toggle:checked ~ .menu__box {
-			visibility: visible;
-			top: 0;
-		 }
-	}
+      &__columns {
+         width: 100%;
+         margin: 20px 0 0;
+    }
+          &__section2{
+       padding-top: 0px;
+      }
+    h5{
 
+      margin-bottom: 10px;
+   }
+	}
+	}
 @media (max-width:300px) {
 	.footer{
-		&__servises-box{
-			position: none;
-			width: 100%;
-			text-align: center;
-		}
-		/*&__grid{
-			grid-template-columns: 1fr;
-			grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
-			grid-template-areas:
-			"logotip" 
-			"logotip"
-			"order"
-			"signin"
-			"servises"
-			"about"
-			"hit"
-			"telefon"
-			"burger";
-		}*/
-		&__logo-image{
+			&__logo-image{
 			display: none;
 		}
-		.menu__btn{
-			left: 5px;
-		}
-		#menu__toggle:checked ~ .menu__btn > span{
-			transform: rotate(45deg);
-			top: -500px;
-			left: 0;
-		 }
-		 .menu__box{
-			width: 100%;
-		 }
+      &__grid {
+         margin: 0 auto;
+      }
+      &__servises,&__about-us,&__hiw,&__telefon,&__buttons, .button-grid-signin, .button-grid-order, &__burger{
+         justify-content: start; 
+         padding-left: 20px;   
+         }
+	}
+}
+@media (max-width:220px) {
+   .footer{
+      &__grid {
+         grid-template-columns: repeat(1, 1fr);
+         grid-auto-rows: 40px;
+         grid-template-areas:
+			"logotip"
+			"order"
+         "signin"
+			"servises"
+         "about"
+         "telefon"
+         "burger"
+			"hit";
+      }
+      &__servises,&__about-us,&__hiw,&__telefon,&__buttons, .button-grid-signin, .button-grid-order, &__burger{
+         justify-content: center; 
+         padding-left: 0; 
+               }
 	}
 }
 
